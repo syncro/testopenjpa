@@ -1,0 +1,43 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="Q4161012"
+                      transaction-type="RESOURCE_LOCAL">
+        <class>net.techminded.domain.User</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver"
+                      value="org.hsqldb.jdbcDriver" />
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:hsqldb:mem:my-project-test" />
+            <property name="javax.persistence.jdbc.user" value="sa" />
+            <property name="javax.persistence.jdbc.password" value="" />
+
+            <property name="openjpa.jdbc.DBDictionary"
+                      value="org.apache.openjpa.jdbc.sql.HSQLDictionary" />
+            <property name="openjpa.jdbc.SynchronizeMappings"
+                      value="buildSchema(SchemaAction=add)"/>
+            <property name="openjpa.RuntimeUnenhancedClasses" value="unsupported"/>
+            <property name="openjpa.DynamicEnhancementAgent" value="false" />
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="Q4161012-test"
+                      transaction-type="RESOURCE_LOCAL">
+        <class>net.techminded.domain.User</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver"
+                      value="org.hsqldb.jdbcDriver" />
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:hsqldb:mem:my-project-test" />
+            <property name="javax.persistence.jdbc.user" value="sa" />
+            <property name="javax.persistence.jdbc.password" value="" />
+
+            <property name="openjpa.jdbc.DBDictionary"
+                      value="org.apache.openjpa.jdbc.sql.HSQLDictionary" />
+            <property name="openjpa.jdbc.SynchronizeMappings"
+                      value="buildSchema(SchemaAction=add)"/>
+            <property name="openjpa.RuntimeUnenhancedClasses" value="unsupported"/>
+            <property name="openjpa.DynamicEnhancementAgent" value="false" />
+        </properties>
+    </persistence-unit>
+</persistence>
